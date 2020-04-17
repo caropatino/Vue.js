@@ -22,14 +22,15 @@ Vue.component ('product',{
 						v-for="variant in variants" 
 						:key="variant.variantID"
 						class="circular"
-						v-bind:style="{ 'background-image': 'url(' + `${variant.variantcolor}` + ')' }"
+						v-bind:style="{ 'background-image': 'url(' + '${data().variant.variantcolor}' + ')' }"
 						@click= "updateProduct(variant.variantimage)">
 						</div>
 					</div>
 				</div>
 	`,
 	data() {
-		return {product: 'Shorts',
+		return {	
+					product: 'Shorts',
 					Description: 'Las shorts mas bellos',
 					instock: true,
 					image: './assets/Capture.png',
