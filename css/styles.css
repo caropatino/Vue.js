@@ -9,9 +9,9 @@ body {
     margin: 0px;
   }
 
-   button {
+   .btn {
     border: none;
-    background-color: #1E95EA;
+    background-color: #908989;
     color: white;
     height: 40px;
     width: 100px;
@@ -57,10 +57,19 @@ body {
 	color:white;
 }
 
-  .nav-bar {
+  .navbar {
     background: #000000;
-    height: 60px;
     margin-bottom: 15px;
+  }
+
+  .navbar-brand{
+  	width:20%;
+  	border-image:none;
+
+  }
+
+  .nav-link{
+  	color:grey;
   }
 
   .product {
